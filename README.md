@@ -1,0 +1,2 @@
+# SODatabase
+ScriptableObjectを利用したデータベースパッケージ
