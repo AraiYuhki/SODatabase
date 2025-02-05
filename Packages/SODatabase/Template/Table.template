@@ -1,0 +1,11 @@
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+
+[CreateAssetMenu(menuName = "Master/#CLASSNAME", fileName = "#CLASSNAME")]
+public class #CLASSNAME : TableBase<InfoClass>
+{
+    protected override void Initialize()
+    {
+    }
+}

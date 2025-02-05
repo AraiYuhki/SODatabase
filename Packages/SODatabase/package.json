@@ -1,0 +1,13 @@
+{
+  "name": "jp.xeon.scriptable_object_database",
+  "displayName": "SODatabase",
+  "author": "Xeon",
+  "version": "0.1.0",
+  "dependencies": {
+    "jp.xeon.simple_csv_parser": "1.1.1",
+    "com.unity.addressables": "2.2.2",
+    "com.cysharp.unitask": "2.5.10"
+  },
+  "description": "ScriptableObject\u3092\u5229\u7528\u3057\u305f\u6c4e\u7528\u30c7\u30fc\u30bf\u30d9\u30fc\u30b9\u30d1\u30c3\u30b1\u30fc\u30b8\u3067\u3059\u3002\n\u901f\u5ea6\u3084\u30e1\u30e2\u30ea\u52b9\u7387\u306f\u3042\u307e\u308a\u3088\u304f\u306a\u3044\u304b\u3082\u3067\u3059\u304c\u3001\u4f7f\u3044\u3084\u3059\u3055\u3092\u91cd\u8996\u3057\u3066\u4f5c\u6210\u3057\u3066\u3044\u307e\u3059\u3002",
+  "unity": "2023.3"
+}
