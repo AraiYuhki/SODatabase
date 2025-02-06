@@ -14,18 +14,6 @@ public class ScriptGenerator : MonoBehaviour
         CreateFile<EndDBScriptNameEditAction>("NewDatabaseScript.cs", "DB.template");
     }
 
-    [MenuItem("Assets/Create/Scripting/Database/Info")]
-    public static void CreateInfoCode()
-    {
-        CreateFile<EndInfoNameEditAction>("NewInfo.cs", "Info.template");
-    }
-
-    [MenuItem("Assets/Create/Scripting/Database/Table")]
-    public static void CreateTableCode()
-    {
-        CreateFile<EndTableNameEditAction>("NewTable.cs", "Table.template");
-    }
-
     private static void CreateFile<T>(string fileName, string templateName) where T : EndNameEditAction
     {
         var directoryPath = AssetDatabase.GetAssetPath(Selection.activeObject);
@@ -69,15 +57,5 @@ public class ScriptGenerator : MonoBehaviour
     private class EndDBScriptNameEditAction : EndScriptNameEditActionBase
     {
         protected override string TemplateFileName => "DB.template";
-    }
-
-    private class EndTableNameEditAction : EndScriptNameEditActionBase
-    {
-        protected override string TemplateFileName => "Table.template";
-    }
-
-    private class EndInfoNameEditAction : EndScriptNameEditActionBase
-    {
-        protected override string TemplateFileName => "Info.template";
     }
 }
